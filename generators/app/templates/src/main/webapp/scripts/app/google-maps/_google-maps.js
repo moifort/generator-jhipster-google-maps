@@ -3,17 +3,17 @@
 angular.module('<%=angularAppName%>')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('google-map', {
+            .state('google-maps', {
                 parent: 'site',
-                url: '/google-map',
+                url: '/google-maps',
                 data: {
                     authorities: [],
-                    pageTitle: 'Google map'
+                    pageTitle: 'Google maps'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/google-map/google-map.html',
-                        controller: 'GoogleMapController'
+                        templateUrl: 'scripts/app/google-maps/google-maps.html',
+                        controller: 'GoogleMapsController'
                     }
                 }
             });

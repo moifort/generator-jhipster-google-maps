@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('<%=angularAppName%>')
-    .controller('GoogleMapController', function ($scope, $templateCache, uiGmapGoogleMapApi) {
+    .controller('GoogleMapsController', function ($scope, $templateCache, uiGmapGoogleMapApi) {
         $scope.markersDescription = [];
         $scope.markerLocator = {};
 
-        $templateCache.put('searchbox.tpl.html', '<input type="text" class="pac-controls form-control" name="title" placeholder="{{ \'restaurant.address\' | translate}}" id="pac-input" >');
+        $templateCache.put('searchbox.tpl.html', '<input type="text" class="pac-controls form-control" name="title" placeholder="Search" id="pac-input" >');
 
         var marker1 = {
             id: 1,
@@ -68,6 +68,7 @@ angular.module('<%=angularAppName%>')
             bounds: {},
             markersDescription: [],
             idkey: 'id',
+            markers: $scope.markersDescription,
             events: {
                 idle: function (map) {
 

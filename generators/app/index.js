@@ -71,7 +71,7 @@ module.exports = yeoman.generators.Base.extend({
             "});";
 
         jhipsterFunc.addAngularJsConfig(['uiGmapGoogleMapApiProvider'], config, 'Google maps configuration');
-        jhipsterFunc.addAngularJsModule('.angular-google-map-container { height: 400px; }', 'Google maps')
+        jhipsterFunc.addMainCSSStyle('.angular-google-map-container { height: 400px; }', 'Google maps')
 
         // Sample page
         this.template('src/main/webapp/scripts/app/google-maps/_google-maps.controller.js', webappDir + 'scripts/app/google-maps/google-maps.controller.js');

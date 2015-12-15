@@ -2,13 +2,15 @@
     <h2><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Google maps</h2>
     <hr>
     <div class="row">
-        <div class="col-sm-7">
-            <div class="form-horizontal">
-                <div class="form-group">
-                    <div class="col-sm-12" id="searchboxdiv"></div>
-                </div>
+        <div class="col-sm-9">
+            <div class="input-group" id="searchboxdiv">
+              <span class="input-group-addon" id="sizing-addon1">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </span>
             </div>
-            <div style="height: 400px;">
+            <br>
+
+            <div>
                 <ui-gmap-google-map center="map.center"
                                     zoom="map.zoom"
                                     dragging="map.dragging"
@@ -50,20 +52,12 @@
             </div>
         </div>
 
-        <div class="col-sm-5">
-            <div ng-if="display">
-                <div>
-                    <div>
-                        <h2 style="margin: 0px">{{ display.description }}</h2>
-
-                        <p>
-                            <i>
-                                {{ display.description }}
-                            </i>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-3">
+            <p>
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <span ng-if="!display"> No selected marker</span>
+                <span ng-if="display"> id: {{ display.id }} - <i>{{ display.description }}</i></span>
+            </p>
         </div>
     </div>
 </div>

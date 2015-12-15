@@ -1,69 +1,48 @@
-# generator-jhipster-angular-ui
+# generator-jhipster-google-maps
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Install easily and get sample code of the most famous AngularUI library on your JHipster application.
+> Install a sample of Google maps on your JHipster application.
 
-**Modules available:**
-- Font Awesome
-- Awesome Bootstrap Checkbox
-- NGSwitchery
-- Angular Bootstrap Slider
+## Requirement
+
+You need a Google maps API key: https://developers.google.com/maps/documentation/javascript/get-api-key
 
 ## Usage
 
 This is a [JHipster](http://jhipster.github.io/) module, that is meant to be use in a JHipster application.
 
-![](/static/generator-jhipster-angular-ui.gif)
+![](/static/generator-jhipster-google-maps-install.gif)
+
+![](/static/generator-jhipster-google-maps-demo.gif)
 
 ## Installation
 
 As this is a [JHipster](http://jhipster.github.io/) module, we expect you have JHipster and its related tools already installed.
 
 ```bash
-npm install -g generator-jhipster-angular-ui
+npm install -g generator-jhipster-google-maps
 ```
 
 Then run the module on a JHipster generated application:
 
 ```bash
-yo jhipster-angular-ui
+yo jhipster-google-maps
 ```
 
-## Modules Details
+## Angular Google Maps
+Angular Google Maps is a set of directives (part of angular-ui) written in CoffeeScript and Javascript which integrate Google Maps in an AngularJS applications.
+It is based on the Google Maps Javascript API version 3.
 
-### Font Awesome
-
-Font Awesome is a full suite of 605 pictographic icons for easy scalable vector graphics on websites, created and maintained by Dave Gandy. Stay up to date with the latest release and announcements on Twitter: @fontawesome.
-
-- Github: https://github.com/FortAwesome/Font-Awesome
-- Website: http://fontawesome.io/
-
-### Awesome Bootstrap Checkbox
-
-Font Awesome Bootstrap Checkboxes & Radios plugin. Pure CSS way to make inputs look prettier. No Javascript!
-
-- Github: https://github.com/flatlogic/awesome-bootstrap-checkbox
-- Demo: http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/
-
-### NGSwitchery
-
-Switchery is a simple component that helps you turn your default HTML checkbox inputs into beautiful iOS 7 style switches in just few simple steps. You can easily customize switches, so that they match your design perfectly.
-
-- Github: https://github.com/servergrove/NgSwitchery
-- Website: http://abpetkov.github.io/switchery/
-
-### Angular Bootstrap Slider
-
-- Github: https://github.com/seiyria/angular-bootstrap-slider
-- Demo: http://seiyria.com/bootstrap-slider/
+* Github: https://github.com/angular-ui/angular-google-maps
+* Website: https://angular-ui.github.io/angular-google-maps/#!/
 
 ## License
 
 Apache-2.0 © Thibaut Mottet
 
 
-[npm-image]: https://img.shields.io/npm/v/generator-jhipster-angular-ui.svg
-[npm-url]: https://npmjs.org/package/generator-jhipster-angular-ui
-[daviddm-image]: https://david-dm.org/moifort/generator-jhipster-angular-ui.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/moifort/generator-jhipster-angular-ui
-[travis-image]: https://travis-ci.org/moifort/generator-jhipster-angular-ui.svg?branch=master
-[travis-url]: https://travis-ci.org/moifort/generator-jhipster-angular-ui
+[npm-image]: https://img.shields.io/npm/v/generator-jhipster-google-maps.svg
+[npm-url]: https://npmjs.org/package/generator-jhipster-google-maps
+[daviddm-image]: https://david-dm.org/moifort/generator-jhipster-google-maps.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/moifort/generator-jhipster-google-maps
+[travis-image]: https://travis-ci.org/moifort/generator-jhipster-google-maps.svg?branch=master
+[travis-url]: https://travis-ci.org/moifort/generator-jhipster-google-maps
