@@ -1,7 +1,13 @@
-'use strict';
+(function() {
+    'use strict';
 
-angular.module('<%=angularAppName%>')
-    .controller('GoogleMapsController', function ($scope, $templateCache, uiGmapGoogleMapApi) {
+    angular
+        .module('<%=angularAppName%>')
+        .controller('GoogleMapsController', GoogleMapsController);
+
+    GoogleMapsController.$inject = ['$scope', '$templateCache', 'uiGmapGoogleMapApi'];
+
+    function GoogleMapsController($scope, $templateCache, uiGmapGoogleMapApi) {
         $scope.markersDescription = [];
         $scope.markerLocator = {};
 
@@ -162,4 +168,5 @@ angular.module('<%=angularAppName%>')
         };
 
         $scope.load();
-    });
+    }
+})();
