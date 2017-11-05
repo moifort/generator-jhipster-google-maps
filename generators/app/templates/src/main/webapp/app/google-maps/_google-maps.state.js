@@ -1,10 +1,16 @@
-'use strict';
+(function() {
+    'use strict';
 
-angular.module('<%=angularAppName%>')
-    .config(function ($stateProvider) {
+    angular
+        .module('<%=angularAppName%>')
+        .config(stateConfig);
+
+    stateConfig.$inject = ['$stateProvider'];
+
+    function stateConfig($stateProvider) {
         $stateProvider
             .state('google-maps', {
-                parent: 'site',
+                parent: 'app',
                 url: '/google-maps',
                 data: {
                     authorities: [],
@@ -12,9 +18,11 @@ angular.module('<%=angularAppName%>')
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/google-maps/google-maps.html',
+                        templateUrl: 'app/google-maps/google-maps.html',
                         controller: 'GoogleMapsController'
                     }
                 }
             });
-    });
+    }
+
+})();
