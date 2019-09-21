@@ -1,3 +1,5 @@
+**DEPRECATED this repository is no longer maintained**
+
 # generator-jhipster-google-maps
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Install a sample of Google maps on your JHipster application.
